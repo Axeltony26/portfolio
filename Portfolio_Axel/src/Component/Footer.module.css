@@ -1,0 +1,12 @@
+.footer{
+    width: 100%;
+    background-color: rgb(47, 60, 79);
+    display: flex;
+    justify-content: center ;
+margin-top: 50%;
+}
+
+.linkedin{
+  margin-right: 4rem;
+}
+  

@@ -1,0 +1,100 @@
+.container {
+    background-color: #6ea5db;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .innerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrer les éléments horizontalement */
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e5e3e3;
+    text-decoration: none;
+  }
+  
+  .menu {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menuItem {
+    margin-left: 55px;
+    margin-right: 25px; /* Ajouter une marge droite */
+  }
+  
+  .item {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .item:hover {
+    animation: blink 0.8s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      color: #555;
+    }
+    50% {
+      color: #333;
+    }
+    100% {
+      color: #555;
+    }
+  }
+  
+  .menuToggle {
+    display: none;
+  }
+  
+  .menuToggleLabel {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 3px;
+  }
+  
+  .menuToggleLabel span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .innerContainer {
+      flex-direction: column;
+    }
+  
+    .menu {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .menuItem {
+      margin: 10px 0;
+    }
+  
+    .menuToggle {
+      display: block;
+    }
+  
+    .menuToggle:checked ~ .menu {
+      display: block;
+    }
+  
+    .menuToggleLabel span {
+      background-color: #fff;
+    }
+  }
+  
