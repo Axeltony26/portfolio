@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+button{
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0; 
+  color: #333;  
+}
+.Footer {
+  margin-top: auto;
+  flex: 1;
+}
+
+
+
+.dark {
+  background-color: #333; /* Dark mode background color */
+  color: #f0f0f0; /* Dark mode text color */
+}
+
+/* Other CSS styles... */
+
+.toggle-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 24px;
+}
